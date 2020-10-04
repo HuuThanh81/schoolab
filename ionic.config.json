@@ -1,0 +1,7 @@
+{
+  "name": "atm-final-pj",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

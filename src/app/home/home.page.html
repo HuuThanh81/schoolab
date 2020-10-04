@@ -1,0 +1,31 @@
+<div class="content">
+  <div class="top">
+    <h1>ATM SYSTEM</h1>
+  </div>
+  <div class="head">
+    <h3>Log In</h3>
+    <!-- <p>Don't have an acount? <a>Sign Up</a></p> -->
+  </div>
+  <div>
+    <form [formGroup]="registrationForm">
+      <div class="tt">
+        <div class="email">
+          <p class="left">Email *</p><br/>
+          <input formControlName="emailValidation" type="text" [(ngModel)]="emailInput" required />
+        </div>
+        <div class="email">
+          <p class="left">Password *</p><br/>
+          <input formControlName="passwordVaildation" type="password" [(ngModel)]="passInput" required/>
+        </div>
+      </div>
+      <p class="right" style="text-decoration: underline;">Forgot your password?</p>
+        <div class="SM">
+          <button class="btn" routerDirection="root" type="submit" expand="block" (click)="openAll()" [disabled]="!registrationForm.valid">Log In</button>
+          <p>or</p>
+          <button class="loggg" [disabled]="!registrationForm.valid">Log In With Google</button>
+          <p>Don't have an account? <a>Sign Up</a></p>
+        </div>
+    </form>
+</div>
+
+
