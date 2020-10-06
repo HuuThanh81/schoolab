@@ -3,16 +3,23 @@
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title>Hệ thống ATM</ion-title>
+    <ion-title>ATM System</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div id="container">
-    <ion-text>
-      <h4>Tài khoản: {{ email }}</h4>
-      <h4>Tên: {{ name }}</h4>
-      <h4>Chi tiết: <br /> Số tiền còn lại: {{ amount }}</h4>
-    </ion-text>
+  <div class="container">
+    <div class="cont">
+      <p>Account</p><br/>
+      <h3>{{ email }}</h3>
+      <p>Name</p><br/>
+      <h3>{{ name }}</h3>
+      <p>Amount</p><br/>
+      <h3>{{ amount }}</h3>
+    </div>
+  </div>
+  <div class="controler">
+    <btn class="recharge" >{{ chang }}</btn>
+    <brn class="transfer" >{{ tran }}</brn>
   </div>
 </ion-content>

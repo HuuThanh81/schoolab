@@ -1,16 +1,22 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Hệ thống ATM</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>ATM System</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div id="container">
-    <h3>Tài khoản</h3>
-    <h3>{{ email }}</h3>
-    <ion-button routerDirection="forward" (click)="detail()" class="btn-login" type="submit" color="danger"
-      expand="block">Xem thông tin
-      tài khoản
-    </ion-button>
+  <div class="container">
+    <div class="cont">
+      <p>Account</p><br/>
+      <h3>{{name}}</h3><br/>
+      <p>Email</p><br/>
+      <h3>{{ email }}</h3>
+    </div>
+      <button routerDirection="forward" (click)="detail()" class="btn" type="submit" expand="block">Xem thông tin
+        tài khoản
+      </button>
   </div>
 </ion-content>
